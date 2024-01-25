@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90vw;
+  margin: auto;
+  padding: 20px;
+}
+
+.add-card-con {
+  max-width: 50vw;
+  margin: auto;
+  padding: 1.5em;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3em;
+}
+
+.add-card-con h2 {
+  color: #363062;
+  margin-bottom: 0.5em;
+}
+
+.error-message {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0.3em;
+  color: #f5f5f5;
+  border-radius: 8px;
+  background-color: #ff9130;
+}
+
+.hide {
+  display: none;
+}
+
+.error-message p {
+  margin-left: 0.5em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 0.8em;
+  border: 1.5px solid #b9b4c7;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+#add-btn {
+  background-color: #363062;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background-color: #b9b4c7;
+  color: #363062;
+}
+
+/* .card-con {
+  width: 1440px;
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+#card-list {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.2em;
+  gap: 0.7em;
+  background-color: #b9b4c7;
+}
+
+.card {
+  width: 100%;
+  max-width: 50vw;
+  background-color: #f9f9f9;
+  border: 1.5px solid #4d4c7d;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 0.2em;
+}
+
+.question {
+  color: #363062;
+}
+.answer {
+  font-weight: 600;
+  color: #4d4c7d;
+}
+
+button {
+  padding: 5px 8px;
+  cursor: pointer;
+}
