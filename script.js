@@ -36,17 +36,20 @@ function displayCards() {
     cardList.innerHTML += `<div class="card"> 
     <p class="question">${flashcards[i].question}</p>
     <p class="answer">${flashcards[i].answer}</p>
-    <button type ="button" onclick="editCard(${i})">Edit</button>
-    <button type ="button" onclick="deleteCard(${i})">Delete</button>
+    <button type ="button" class="btn" onclick="editCard(${i})">Edit</button>
+    <button type ="button" class="btn" onclick="deleteCard(${i})">Delete</button>
     </div>`;
   }
 }
 displayCards();
 
 function editCard(index) {
+  //Edit field question
   const newQuestion = prompt("Edit QUESTION", flashcards[index].question);
+  //Edit field answer
   const newAnswer = prompt("Edit ANSWER", flashcards[index].answer);
 
+  //Error handling memastikan field question atau answer tidak ada yang kosong, lalu menyimpan data yang  baru
   if (newQuestion === "" || newAnswer === "") {
     alert("Input can't be empty!");
   } else if (newQuestion === null || newAnswer === null) {
